@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+  <style>
+    .signature {
+      fill: none;
+      stroke: #4CAF50;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+  <path class="signature" d="M30,70 C35,55 45,45 55,50 C65,55 60,75 70,65 C80,55 75,45 85,40 C95,35 100,45 105,50 C110,55 115,55 120,50 C125,45 130,40 135,45 C140,50 145,60 150,55 C155,50 160,40 165,45 C170,50 175,60 180,55 C185,50 190,40 195,45 C200,50 205,60 210,55 C215,50 220,40 225,45 C230,50 235,60 240,55 C245,50 250,45 255,50 C260,55 265,65 270,60" />
+  <path class="signature" d="M50,30 C55,25 60,20 65,25 C70,30 75,40 80,35 C85,30 90,25 95,30" />
+</svg>

@@ -1,0 +1,147 @@
+/* Custom Styles to enhance Bootstrap */
+
+/* General Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Drop Zone Styling */
+.drop-zone {
+    border: 2px dashed var(--bs-secondary);
+    border-radius: 8px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: rgba(var(--bs-dark-rgb), 0.4);
+}
+
+.drop-zone:hover, .drop-zone.highlight {
+    border-color: var(--bs-primary);
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+.icon-container {
+    margin-bottom: 1rem;
+    color: var(--bs-secondary);
+}
+
+.drop-zone:hover .icon-container, 
+.drop-zone.highlight .icon-container {
+    color: var(--bs-primary);
+}
+
+.or-message {
+    margin: 1rem 0;
+    color: var(--bs-secondary);
+}
+
+.image-preview-container {
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(var(--bs-dark-rgb), 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#imagePreview {
+    max-height: 180px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Results Display */
+.result-icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.genuine-result {
+    background-color: rgba(var(--bs-success-rgb), 0.2);
+    color: var(--bs-success);
+}
+
+.forged-result {
+    background-color: rgba(var(--bs-danger-rgb), 0.2);
+    color: var(--bs-danger);
+}
+
+/* Sample Signatures */
+.sample-signature {
+    max-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sample-signature img {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Process Images */
+.process-image {
+    max-height: 180px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.processing-steps .card-body {
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .drop-zone {
+        padding: 1.5rem;
+    }
+    
+    .sample-signature {
+        max-height: 100px;
+    }
+    
+    .image-preview-container {
+        max-height: 150px;
+    }
+    
+    #imagePreview {
+        max-height: 130px;
+    }
+    
+    .process-image {
+        max-height: 150px;
+    }
+    
+    .processing-steps .card-body {
+        height: 170px;
+    }
+}
